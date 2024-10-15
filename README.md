@@ -1,2 +1,1 @@
-# hexagonal-architecture-examples
-Hexagonal architecture examples
+# Hexagonal Architecture Examples
