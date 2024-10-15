@@ -5,6 +5,9 @@ class Trade:
         self.price = price
         self.status = "Pending"
 
+    def __str__(self):
+        return f"{self.stock_symbol} | {self.quantity} | {self.price} | {self.status}"
+
     def execute(self):
         self.status = "Executed"
         return f"Executed trade for {self.quantity} shares of {self.stock_symbol} at ${self.price}"
