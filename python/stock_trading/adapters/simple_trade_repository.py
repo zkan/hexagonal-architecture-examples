@@ -7,5 +7,7 @@ class SimpleTradeRepository(TradeRepository):
 
     def save(self, trade):
         self.trades.append(trade)
-        print(f"Trade saved: {trade.stock_symbol}, {trade.quantity} shares at ${trade.price}")
+        print(
+            f"Trade saved: {trade.stock_symbol}, {trade.quantity} shares at ${trade.price}"
+        )
         return trade
