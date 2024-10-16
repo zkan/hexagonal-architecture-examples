@@ -11,3 +11,6 @@ class SimpleTradeRepository(TradeRepository):
             f"Trade saved: {trade.stock_symbol}, {trade.quantity} shares at ${trade.price}"
         )
         return trade
+
+    def get_trades(self):
+        return self.trades

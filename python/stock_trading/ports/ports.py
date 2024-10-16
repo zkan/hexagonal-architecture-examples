@@ -11,3 +11,7 @@ class TradeRepository(ABC):
     @abstractmethod
     def save(self, trade):
         raise NotImplementedError
+
+    @abstractmethod
+    def get_trades(self):
+        raise NotImplementedError

@@ -12,3 +12,6 @@ class TradeService:
         trade.execute()
         self.trade_repository.save(trade)
         return trade
+
+    def get_trades(self):
+        return self.trade_repository.get_trades()
