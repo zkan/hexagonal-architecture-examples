@@ -1,10 +1,5 @@
-from adapters.simple_stock_price_provider import SimpleStockPriceProvider
-from adapters.simple_trade_repository import SimpleTradeRepository
+from ports.ports import StockPriceProvider, TradeRepository
 from services.trade_service import TradeService
-
-
-from ports.ports import StockPriceProvider
-from ports.ports import TradeRepository
 
 
 class MyStockPriceProvider(StockPriceProvider):
