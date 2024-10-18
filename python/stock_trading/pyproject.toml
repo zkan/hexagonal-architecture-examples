@@ -17,10 +17,17 @@ packages = ["."]
 dev-dependencies = [
     "pytest>=8.3.3",
     "ruff>=0.6.9",
-    "isort>=5.13.2",
 ]
 
-[tool.isort]
-sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
-multi_line_output = 3
-lines_after_imports = 2
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["COM", "F", "I", "N", "Q", "W", "E"]
+preview = true
+
+
+[tool.ruff.lint.isort]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+split-on-trailing-comma = true
+lines-after-imports = 2
